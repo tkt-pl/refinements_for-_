@@ -1,0 +1,7 @@
+mcp
+requests
+openai
+uvicorn
+fastapi
+beautifulsoup4
+pypinyin

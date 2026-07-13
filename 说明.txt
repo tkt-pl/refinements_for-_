@@ -1,0 +1,11 @@
+改进：
+从中国地震台网速报目录获取信息源。
+网址：https://data.earthquake.cn/datashare/report.shtml?PAGEID=earthquake_subao
+针对国内地点加入二次检验确保地震属于claim的地点。
+添加分辨灾害类型的功能。
+改进prompt，多要求识别行政区划级别，优化prompt使地点输出更加格式化
+ps: 行政区划识别精度止于县级行政区
+
+构造数据集：
+关于真实数据，可以在国家地震科学数据中心和usgs earthquake hazard program找。
+虚假幻觉数据可以通过更改真实的部分数据获得，比如更改至少0.5的震级，更改大于县级行政区划的地点与经纬度，更改大于24h的时间。
